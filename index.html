@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Invoice #INV-001</title>
+
+    <style>
+      @page {
+        size: A4;
+        margin: 15mm 12mm;
+      }
+
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        color: #222;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      .company {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .meta {
+        text-align: right;
+        font-size: 12px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        font-size: 12px;
+      }
+
+      th {
+        background: #f2f2f2;
+      }
+
+      .right {
+        text-align: right;
+      }
+
+      .total {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .total-box {
+        width: 300px;
+        border: 1px solid #ddd;
+        padding: 12px;
+      }
+
+      .total-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+      }
+
+      .grand-total {
+        font-weight: bold;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+        padding-top: 8px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <h1>INVOICE</h1>
+        <div class="company">Braincore Tech</div>
+        <div>Jl. Mawar No. 123</div>
+        <div>Jakarta, Indonesia</div>
+      </div>
+
+      <div class="meta">
+        <div><strong>Invoice No:</strong> INV-001</div>
+        <div><strong>Date:</strong> 23 Jan 2026</div>
+        <div><strong>Due:</strong> 30 Jan 2026</div>
+      </div>
+    </div>
+
+    <div>
+      <strong>Billed To:</strong><br />
+      PT Onni Sejahtera<br />
+      onni@example.com
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th class="right">Qty</th>
+          <th class="right">Price</th>
+          <th class="right">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Software Subscription</td>
+          <td class="right">1</td>
+          <td class="right">Rp 5.000.000</td>
+          <td class="right">Rp 5.000.000</td>
+        </tr>
+        <tr>
+          <td>Implementation Fee</td>
+          <td class="right">1</td>
+          <td class="right">Rp 2.000.000</td>
+          <td class="right">Rp 2.000.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="total">
+      <div class="total-box">
+        <div class="total-row">
+          <span>Subtotal</span>
+          <span>Rp 7.000.000</span>
+        </div>
+        <div class="total-row">
+          <span>Tax (11%)</span>
+          <span>Rp 770.000</span>
+        </div>
+        <div class="total-row grand-total">
+          <span>Total</span>
+          <span>Rp 7.770.000</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
