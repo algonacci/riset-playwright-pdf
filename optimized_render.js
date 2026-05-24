@@ -11,7 +11,7 @@ const outputPdf = path.join(__dirname, "invoice.pdf");
 
 (async () => {
   const browser = await chromium.launch({
-    headless: "new",
+    headless: true,
     args: [
       "--disable-gpu",
       "--disable-extensions",

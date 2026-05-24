@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-01-23T17:38:05.340Z",
+  "optimized": {
+    "name": "Optimized (setContent + optimizations)",
+    "time": 216.5,
+    "initialRSS": 101.05,
+    "initialHeap": 42.14,
+    "peakRSS": 105.36,
+    "peakHeap": 36.58,
+    "finalRSS": 105.71,
+    "finalHeap": 37.29
+  },
+  "standard": {
+    "name": "Standard (file:// + defaults)",
+    "time": 346.76,
+    "initialRSS": 105.73,
+    "initialHeap": 37.32,
+    "peakRSS": 106.33,
+    "peakHeap": 38.84,
+    "finalRSS": 106.65,
+    "finalHeap": 39.38
+  },
+  "difference": {
+    "time": 130.26,
+    "timePercent": 37.6,
+    "rssDiff": 0.9699999999999989,
+    "heapDiff": 2.260000000000005
+  }
+}
